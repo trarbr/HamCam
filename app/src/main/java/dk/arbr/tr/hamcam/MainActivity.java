@@ -63,6 +63,9 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        // TODO: Figure out if this is necessary
+        //       It may not be necessary, but it is good style:
+        //       http://stackoverflow.com/questions/11745366/is-there-a-need-to-use-super-onactivityresult-in-onactivityresult
         super.onActivityResult(requestCode, resultCode, intent);
 
         if (requestCode == TAKE_PICTURE_REQUEST_CODE) {
